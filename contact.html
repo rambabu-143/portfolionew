@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page </title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cont {
+            height: 320px;
+            width: 100%;
+            color: rgb(255 255 255/var(--tw-text-opacity));
+            background-color: rgba(16, 217, 248, 0.418);
+            position: absolute;
+            top: 150px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav {
+            height: 12vh;
+            width: 100%;
+            background-color: aqua;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row-reverse;
+            position: sticky;
+        }
+
+        ul {
+            display: flex;
+            margin: 0;
+            padding: 0px 10px;
+            
+        }
+
+        li {
+            box-sizing: border-box;
+            margin: 20px;
+            padding: 10px;
+            list-style: none;
+
+            color: green; 
+
+        }
+        li a {
+            text-decoration: none;
+            color: green;
+        }
+
+        nav ul li a:hover {
+            transform: translatey(2px);
+
+        }
+
+        h1 {
+            position: relative;
+            top: 30px;
+            left: 30px;
+            font-family: cursive;
+            color: white;
+        }
+        #face{
+            position: relative;
+            top: 110px;
+            right: 300px;
+            background-color: white;
+            border-radius: 50%;
+            height: 35px;
+            width: 35px;
+        }
+        #insta{
+            height: 27px;
+            width: 35px;
+            position: relative;
+            top: 115px;
+            background-color: white;
+            border-radius: 50%;
+            right: 250px;
+        }
+        #linked{
+            height: 35px;
+            width: 35px;
+            position: relative;
+            background-color: white;
+            border-radius: 50%;
+            top: 110px;
+            right: 200px;
+        }
+        #git{
+            height: 35px;
+            width: 35px;
+            position: relative;
+            top: 110px;
+            background-color: white;
+            border-radius: 50%;
+            right: 150px;
+        }
+        body {
+            background-color: #1f3f49;
+        }
+        footer {
+            display: flex;
+            box-sizing: border-box;
+            /* justify-content: center; */
+            align-items: center;
+            margin: 0;
+            padding: 10px;
+            height: 40px;
+            width: 1260px;
+            background-color: #1f3f49;
+            color: white;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            border-width: 12px;
+            box-shadow: 1px 1px 10px rgb(8, 218, 250);
+            border-radius: 12px;
+        }
+
+        #github {
+            position: relative;
+            left: 930px;
+            /* color: white; */
+            background-color: white;
+            border-radius: 50%;
+            height: 35px;
+        }
+
+        #linkedin {
+            position: relative;
+            left: 900px;
+            /* color: green; */
+            background-color: white;
+            border-radius: 50%;
+
+        }
+
+        #instagram {
+            /* color: green; */
+            position: relative;
+            left: 870px;
+            background-color: white;
+            border-radius: 50%;
+            height: 27px;
+            /* width: 35px; */
+
+        }
+
+        #facebook {
+            /* color: green; */
+            /* background-color: green; */
+            position: relative;
+            height: 35px;
+            left: 840px;
+            background-color: white;
+            border-radius: 50%;
+
+        }
+        #github:hover{
+            transform: translateY(-2px);
+            
+        }
+        #linkedin:hover{
+            transform: translateY(-2px);
+        }
+        #instagram:hover{
+            transform: translateY(-2px);
+        }
+        #facebook:hover{
+            transform: translateY(-2px);
+        }
+        #git:hover{
+            transform: translateY(-2px);
+            
+        }
+        #linked:hover{
+            transform: translateY(-2px);
+        }
+        #insta:hover{
+            transform: translateY(-2px);
+        }
+        #face:hover{
+            transform: translateY(-2px);
+        }
+        a:hover {
+            transform: translatey(2px);
+
+        }
+        #logo{
+            margin: 0;padding: 0;
+            position: absolute;
+            left: 0;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <img id="logo"src="logo r1.png" alt="" width="80px" height="72px">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./signpage.html">Signin</a></li>
+            <li><a href="./contact.html">Contact</a> </li>
+        </ul>
+    </nav>
+    <div class="cont">
+        <h1>Feel free to Contact Us!</h1>
+        <br>
+        <br><br>
+        <a href="https://www.facebook.com/ramrac143/" id="face"><img src="./facebook.png" width="35" alt=""
+                width="35" /></a>
+        <a href="https://www.instagram.com/livelikearoyal/" id="insta"><img src="./instagram.png" width="35" alt=""
+                width="35" /></a>
+        <a href="https://www.linkedin.com/in/arabandi-rambabu-b3aabb1b5" id="linked"><img src="./linkedin.png" alt=""
+                width="35" /></a>
+        <a href="https://github.com/rambabu-143" id="git"><img src="./github.png" width="35" /></a>
+    </div>
+    <footer>Copyright&copy;2023 Ramrac
+        <a href="https://www.facebook.com/ramrac143/" id="facebook"><img src="./facebook.png" width="35" alt=""
+                width="35" /></a>
+        <a href="https://www.instagram.com/livelikearoyal/" id="instagram"><img src="./instagram.png" width="35" alt=""
+                width="35" /></a>
+        <a href="https://www.linkedin.com/in/arabandi-rambabu-b3aabb1b5" id="linkedin"><img src="./linkedin.png" alt=""
+                width="35" /></a>
+        <a href="https://github.com/rambabu-143" id="github"><img src="./github.png" width="35" /></a>
+    </footer>
+</body>
+
+</html>

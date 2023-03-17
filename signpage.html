@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        label {
+            color: green;
+            position: relative;
+        }
+
+        body {
+            background-color: #1f3f49;
+        }
+
+        #email {
+            color: green;
+            position: relative;
+            left: 37px;
+
+        }
+
+        #pass {
+            color: green;
+            position: relative;
+            left: 12px;
+        }
+
+        h1 {
+            position: relative;
+            color: green;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+
+        }
+
+        .cont {
+            display: inline-block;
+            background-color: rgb(90, 202, 230);
+            position: absolute;
+            left: 420px;
+            top: 123px;
+            height: 320px;
+            width: 320px;
+            box-shadow: 1px 1px 30px rgb(8, 216, 243);
+            margin: 2px;
+            padding: 22px;
+            border-radius: 40px;
+        }
+
+        .cont:hover {
+            animation: flaotingbox 2s linear 2s infinite;
+
+        }
+
+        button {
+            background-color: green;
+            border-radius: 20px;
+            border-color: green;
+            height: 7vh;
+            width: 6vw;
+            position: relative;
+        }
+
+        input {
+            position: relative;
+        }
+
+        nav {
+            height: 12vh;
+            width: 100%;
+            background-color: aqua;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row-reverse;
+            position: sticky;
+        }
+
+        ul {
+            display: flex;
+            margin: 0;
+            padding: 0px 10px;
+            
+        }
+
+        li {
+            box-sizing: border-box;
+            margin: 20px;
+            padding: 10px;
+            list-style: none;
+
+            color: green; 
+
+        }
+        li a {
+            text-decoration: none;
+            color: green;
+        }
+
+        a:hover {
+            transform: translatey(2px);
+
+        }
+
+        #create {
+            position: relative;
+            left: 130px;
+            color: green;
+        }
+
+        #logo {
+            margin: 0px;
+            padding: 0px;
+            position: absolute;
+            left: 0;
+        }
+
+        @keyframes flaotingbox {
+            0% {
+                left: 420px;
+                top: 123px;
+            }
+
+            50% {
+                top: 100px;
+            }
+
+            100% {
+                top: 123px;
+                left: 420px;
+            }
+
+        }
+
+        footer {
+            display: flex;
+            box-sizing: border-box;
+            /* justify-content: center; */
+            align-items: center;
+            margin: 0;
+            padding: 10px;
+            height: 40px;
+            width: 1260px;
+            background-color: #1f3f49;
+            color: white;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            border-width: 12px;
+            box-shadow: 1px 1px 10px rgb(8, 218, 250);
+            border-radius: 12px;
+        }
+
+        #github {
+            position: relative;
+            left: 930px;
+            /* color: white; */
+            background-color: white;
+            border-radius: 50%;
+            height: 35px;
+        }
+
+        #linkedin {
+            position: relative;
+            left: 900px;
+            color: green;
+            background-color: white;
+            border-radius: 50%;
+
+        }
+
+        #instagram {
+            color: green;
+            position: relative;
+            left: 870px;
+            background-color: white;
+            border-radius: 50%;
+            height: 27px;
+            /* width: 35px; */
+
+        }
+
+        #facebook {
+            color: green;
+            /* background-color: green; */
+            position: relative;
+            height: 35px;
+            left: 840px;
+            background-color: white;
+            border-radius: 50%;
+
+        }
+
+        #github:hover {
+            transform: translateY(-2px);
+
+        }
+
+        #linkedin:hover {
+            transform: translateY(-2px);
+        }
+
+        #instagram:hover {
+            transform: translateY(-2px);
+        }
+
+        #facebook:hover {
+            transform: translateY(-2px);
+        }
+        a:hover {
+            transform: translatey(2px);
+
+        }
+        @media screen and (max-width: 800px){
+            body{
+                background-color: brown;
+            }
+            .cont{
+                background-color: black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <img id="logo" src="logo r1.png" alt="" width="80px" height="72px">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="">Signin</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <body>
+        <div class="cont">
+            <h1>SIGN IN</h1>
+            <br>
+            <br>
+            <label for="email">Enter email </label>
+            <input type="email" name="email" id="email">
+            <br>
+            <br>
+            <label for="password">Enter password</label>
+            <input type="password" name="password" id="pass">
+            <br>
+            <br>
+            <button id="signin">Sign in</button>
+            <a id="create" href="./signup.html" target="_self">Create an account?</a>
+        </div>
+        <!-- Footer -->
+        <footer>Copyright &copy; 2023 Ramrac
+            <a href="https://www.facebook.com/ramrac143/" id="facebook"><img src="./facebook.png" width="35" alt=""
+                    width="35" /></a>
+            <a href="https://www.instagram.com/livelikearoyal/" id="instagram"><img src="./instagram.png" width="35"
+                    alt="" width="35" /></a>
+            <a href="https://www.linkedin.com/in/arabandi-rambabu-b3aabb1b5" id="linkedin"><img src="./linkedin.png"
+                    alt="" width="35" /></a>
+            <a href="https://github.com/rambabu-143" id="github"><img src="./github.png" width="35" /></a>
+        </footer>
+    </body>
+</body>
+
+</html>
